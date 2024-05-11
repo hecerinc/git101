@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Git[hub] 101</title>
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+	@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+	@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+	body { font-family: 'Segoe UI', 'Droid Serif', sans-serif; font-weight: 300; }
+	h1, h2, h3 {
+	  font-family: 'Yanone Kaffeesatz';
+	  font-weight: normal;
+	}
+	.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+	.gitlogo img{width: 40%; margin: 0 auto;}
+	.first{background: #662d91; color: #fff;}
+	.slide4{background:#f83030; color: #fff;}
+	.slide4 h1{font-size: 5rem;}
+	.first h1{font-size: 8rem;}
+	.msftblue, .msft {background-color: #0078D7; color: #fff;}
+	.githublogo img{width: 30%; display: block; margin: 0 auto;}
+	blockquote{color: #60B4D5;} /*#8f8f8f*/
+	.ensayo{padding-top: 15%; background-color:#233252;}
+	h4{color: #F90;}
+	.cf:before,
+	.cf:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	.cf:after {
+	    clear: both;
+	}
+
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	.cf {
+	    *zoom: 1;
+	}
+	.clear {
+		clear: both;
+		display: block;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	.slide10 ul{line-height: 150%;}
+	.workflow{background:#f83030; color: #fff;}
+	.workflow img{width: 80%; margin: 0 auto !important; display: block;}
+	.slide13 h1{text-align: center;}
+	.slide13{background-color: #00224F; color: #fff;}
+	.slide13 code{color:#efc309;}
+	.slide13 ul{line-height: 200%;}
+	.triad{background-color: #5941a9; color: #fff;}
+	.triad code{ font-size:4rem; color: #efc309;}
+	.triad ul li{list-style: none; line-height: 4.5rem;}
+	.h20px{height:40px;}
+	.install{background-color: #087F8C; color: #fff ;}
+	.install a{color: #efc309; margin-top: 60%; font-size: 5rem; text-decoration: none;}
+	.branching{background-color: #f83030; color: #fff;}
+	.branching h1{font-size: 6rem;}
+	.gitlog code.bash{font-size: 6rem;}
+	.merging{background-color: #b0db43; color: #fff;}
+	.merging h1{font-size: 8rem;}
+	.merge2 .bash.remark-code{font-size: 3rem;}
+	.lego img{width: 40%; display: block; margin: 0 auto;}
+	.gitstat{background-color: #f83030; color: rgba(20,20,20,.5);}
+	.gitstat p{color: #fff; width: 60%; margin: 0 auto;}
+	.firstcolor{color: #fff; background-color: #101D42;}
+	.firstcolor h1{color: #efc309;}
+	.lego{background-color: rgb(255, 236, 19);}
+	.commit{background-color: #662d91; color: rgba(255, 255, 255, .8);}
+	/*.slide13 .Bash{background:rgba(255,255,255,.2); color: #fff;}*/
+	.ghtitle{background-color: #f83030; color: #fff;}
+	.ghtitle h1{ font-size: 7rem;}
+	.github2 img{width: 40%; margin: 0 auto; display: block;}
+	.github2 p, .github2 li{font-size: 1rem;}
+	.github2 li{line-height: 150%;}
+	.collab img{width: 95%; display: block; margin: 0 auto;}
+	.ty a{color: #f83030; opacity:.8; text-decoration: none;}
+	.msft .remark-code { font-size: 28px;}
+	.msft .remark-code-line {margin-bottom:40px;}
+	</style>
+</head>
+<body>
+<textarea id="source">
+</textarea>
+<script src="remark.js"></script>
+<script>
+	fetch('attempt.md').then(async (data) => {
+		const result = await data.text();
+		console.log(result);
+		document.getElementById('source').innerHTML = result;
+		var slideshow = remark.create();
+	});
+
+</script>
+</body>
+</html>
